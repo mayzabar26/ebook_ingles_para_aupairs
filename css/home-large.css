@@ -11,7 +11,7 @@
     --color-03: #133578;
     --color-04: #8b1222;
     --color-05: #ffde59; 
-    --color-05: #009846;
+    --color-06: #009846;
 }
 
 @media only screen and (min-width: 38rem) {
@@ -20,6 +20,25 @@
     ul.menuLinks, ul.menuLinks.open {display: flex; justify-content: end;} /*Will organize our menu links in the and of the bar*/
     ul.menuLinks a:hover {background-color: rgba(255,255,255,0.2);}
 
+    /*______________________________HERO IMG______________________________*/
+    .btn-section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        background-color: var(--color-05);
+        margin: 0;
+        padding: 20px;
+        gap: 850px;
+    }
+    
+    #buy_now {
+        bottom: 230px;
+        left: 90px;
+        min-width: 220px;
+        font-size: 18px;
+    }
+    
 
 
     /*______________________________FOOTER______________________________*/

@@ -1,5 +1,6 @@
 /*THIS CSS FILE IS FOR SMALL DEVICES*/
-* {padding: 0; margin: 0; box-sizing: border-box;}
+* {padding: 0; margin: 0; box-sizing: border-box; font-family: var(--font-family-01);}
+body {padding: 0; margin: 0; background-color: var(--color-02);}
 
 :root {
     --font-family-01: "Roboto";
@@ -11,7 +12,7 @@
     --color-03: #133578;
     --color-04: #8b1222;
     --color-05: #ffde59; 
-    --color-05: #009846;
+    /*--color-06: #009846;*/
 }
 
 /*______________________________HEADER______________________________*/
@@ -82,8 +83,65 @@ ul.menuLinks li a {
     
 }
 
+/*______________________________HERO IMG______________________________*/
+.hero_IMG {width: 100%;}
 
 
+/*______________________________BUTTON SECTION______________________________*/
+.btn-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: var(--color-05);
+    margin: 0;
+    padding: 20px;
+    gap: 160px;}
+
+.btn-img {
+    max-width: 50px;
+    width: 100%;
+    height: auto;
+}
+
+#buy_now {
+    border: unset;
+    padding: 15px 45px;
+    border-radius: 20px;
+    color: var(--color-01);
+    background: var(--color-04);
+    font-weight: 800;
+    font-size: 18px;
+    min-width: 180px;
+    max-width: 220px;
+    width: 100%;
+    box-sizing: border-box;
+}
+   
+#buy_now:hover {color: var(--color-02); background-color: var(--color-01);}
+
+/*______________________________QUEM SOMOS E EBOOK SECTION______________________________*/
+.sec2_quem_somos{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-03);
+    color: var(--color-01);
+    gap: 20px;
+}
+
+.sec3_ebook {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-03);
+    color: var(--color-01);
+    gap: 20px;
+}
+
+.sec4_call_action {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-05);
+}
 
 
 

@@ -179,6 +179,8 @@ nav {background: #020024;
   .sec3_ebook {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
     background-color: #152b57;
     padding: 4rem 2rem;
@@ -188,9 +190,10 @@ nav {background: #020024;
     color: var(--color-01);
   }
   
-  .sec3_ebook ol {
+  .sec3_ebook ol, li {
     margin-left: 20px;
     color: var(--color-01);
+    padding: 6px;
   }
   
 

@@ -67,7 +67,16 @@
     gap: 3rem;
   }
 
+  /*___________________SECTION: EBOOK___________________*/  
+  ol, li {
+    padding: 6px;
+    text-align: justify;
+  }
 
+  .sec3_h2 {font-size: 5vh; text-align: center;}
+
+
+  /*___________________FOOTER___________________*/ 
     footer {
       display: flex;
       flex-direction: column;
@@ -86,3 +95,14 @@
       text-align: center;
     }
   }  
+
+@media screen and (max-width: 1100px) {
+  /*___________________SECTION: QUEM SOMOS?___________________*/  
+  .sec2_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+  }
+}

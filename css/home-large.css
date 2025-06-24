@@ -21,10 +21,7 @@
   }
   
 /*______________________________BODY______________________________*/
-body {
-    font-family: var(--font-family-01);
-    background-color: var(--color-02);
-    color: var(--color-01);}
+body {font-family: var(--font-family-01); color: var(--color-01);}
 
   
 /*______________________________HEADER______________________________*/  
@@ -44,7 +41,8 @@ header {
 
   
 /*______________________________NAVBAR______________________________*/  
-nav {background-color: var(--color-04);}
+nav {background: #020024;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(19, 53, 120, 1) 23%, rgba(19, 53, 120, 1) 72%, rgba(23, 37, 66, 1) 89%);}
   
 .menuLinks {
     display: flex;
@@ -72,9 +70,23 @@ nav {background-color: var(--color-04);}
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: var(--color-05);
+    /*background-color: var(--color-05);*/
     padding: 20px;
-    gap: 850px;}
+    gap: 850px;
+    margin-top: -4px;
+    /*animation-name: example;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;*/
+    background: #020024;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(19, 53, 120, 1) 23%, rgba(19, 53, 120, 1) 72%, rgba(23, 37, 66, 1) 89%);
+  }
+
+  @keyframes example {
+  0%   {background-color: var(--color-01);}
+  25%  {background-color: var(--color-05);}
+  50%  {background-color: var(--color-01);}
+  100% {background-color: var(--color-05);}
+}
   
 .btn-img {
     width: 80px;
@@ -92,13 +104,31 @@ nav {background-color: var(--color-04);}
     min-width: 220px;
     max-width: 220px;
     cursor: pointer;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+  }
+  
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+  
+  100% {
+    transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
 }
   
 #buy_now:hover, #buy_now1:hover {background-color: var(--color-01); color: var(--color-02);}
   
 
 /*______________________________SECTION: QUEM SOMOS?______________________________*/  
-.sec2_quem_somos {padding: 4rem 2rem; background-color: var(--color-03);}
+.sec2_quem_somos {padding: 4rem 2rem; background-color: var(--color-01);}
 
 .sec2_container {
     display: flex;
@@ -108,9 +138,9 @@ nav {background-color: var(--color-04);}
 
 .sec2_texto {flex: 1;}
   
-.sec2_h1, .sec2_h2 {color: var(--color-01); margin: 0 0 1rem 0;}
+.sec2_h1, .sec2_h2 {color: var(--color-02); margin: 0 0 1rem 0;}
   
-.sec2_p {font-size: 1.1rem; line-height: 1.6; text-align: justify;}
+.sec2_p {font-size: 1.3rem; line-height: 1.6; text-align: justify; color: var(--color-02); font-weight: 400;}
 
 .sec2_imagem {
     flex: 1;
@@ -150,8 +180,8 @@ nav {background-color: var(--color-04);}
     display: flex;
     flex-direction: column;
     gap: 20px;
-    background-color: var(--color-03);
-    padding: 20px;
+    background-color: #152b57;
+    padding: 4rem 2rem;
   }
   
   .sec3_ebook h1, .sec3_ebook h2, .sec3_ebook h4 {
@@ -169,22 +199,25 @@ nav {background-color: var(--color-04);}
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
     background-color: var(--color-05);
-    padding: 20px;
+    padding: 30px;
   }
   
-  .sec4_h1, .sec4_h2 {
-    color: var(--color-02);
-  }
+.sec4_h1, .sec4_h2 {color: var(--color-02);}
 
+.sec4_h1 {padding-top: 0; margin: 0;}
+
+.sec4_h2 {font-size: 3vh;}
   
 /*______________________________FOOTER______________________________*/  
 footer {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    background-color: var(--color-04);
+    /*background-color: #172542;*/
+    background: #020024;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(19, 53, 120, 1) 23%, rgba(19, 53, 120, 1) 72%, rgba(23, 37, 66, 1) 89%);
     padding: 2rem;
     flex-wrap: wrap;}
   

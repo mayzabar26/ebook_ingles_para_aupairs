@@ -5,7 +5,7 @@
   /*___________________NAVBAR___________________*/  
 
    .menuLinks {display: none; background-color: var(--color-04);}
-   .menuLinks li a {padding: 1rem 35vw;}
+   .menuLinks li a {padding: 1rem 5vw;}
   
     nav.open {
       position: absolute;
@@ -80,12 +80,11 @@
   }
 
   /*___________________SECTION: EBOOK___________________*/  
-  ol, li {
-    padding: 6px;
-    text-align: justify;
-  }
+  ol, li {padding: 6px;}
 
-  .sec3_h2 {font-size: 5vh; text-align: center;}
+  .sec3_h1 {font-size: 3vh;}
+
+  .sec3_h2 {font-size: 3vh; text-align: center;}
 
 
   /*___________________FOOTER___________________*/ 

@@ -23,7 +23,7 @@
 /*______________________________BODY______________________________*/
 body {font-family: var(--font-family-01); color: var(--color-01);}
 
-  
+html {scroll-behavior: smooth;}
 /*______________________________HEADER______________________________*/  
 header {
     display: flex;

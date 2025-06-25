@@ -4,9 +4,25 @@
 @media screen and (max-width: 768px) {
   /*___________________NAVBAR___________________*/  
 
-    nav {display: none;}
+   .menuLinks {display: none; background-color: var(--color-04);}
+   .menuLinks li a {padding: 1rem 35vw;}
   
-    nav.open {display: block;}
+    nav.open {
+      position: absolute;
+      top: 80px;
+      left: 0;
+      width: 100%;
+      z-index: 999;
+    }
+
+    nav.open ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      padding: 20px 0;
+    }
+    
   
     #myButton {
       display: block;
@@ -17,10 +33,6 @@
       cursor: pointer;
       text-align: right;
     }
-  
-    .menuLinks {flex-direction: column;}
-  
-    .menuLinks li a {padding: 1rem 2vw;}
   
     #buy_now, #buy_now1 {
       min-width: 180px;
